@@ -75,11 +75,29 @@ Structure
 .grid-12-12 {width: 97%;}
 
 
-/* first item */ .optimus .alpha {margin-left:0;}
-/* last item */ .optimus .omega {margin-right:0;}
-/* clear */ .optimus .clear {clear:both;}
-/* input without label */ .optimus-no-lbl {position:relative;padding-bottom:0;}
-/* input without label */ .optimus-no-lbl input,  .optimus-no-lbl label,  .optimus-no-lbl span,  .optimus-no-lbl ul,  .optimus-no-lbl p {position:absolute;bottom:0;}
+/* first item */ 
+.optimus .alpha {
+	margin-left:0;
+}
+/* last item */ 
+.optimus .omega {
+	margin-right:0;
+}
+/* clear */ 
+.optimus .clear {
+	clear:both;
+}
+/* input without label */ 
+.optimus-no-lbl {
+	position:relative;
+	padding-bottom:0;
+}
+/* input without label */ 
+.optimus-no-lbl input,  
+.optimus-no-lbl label,  
+.optimus-no-lbl span,  
+.optimus-no-lbl ul,  
+.optimus-no-lbl p {position:absolute;bottom:0;}
 
 /* multiple containers inside field-grid */
 .optimus .left {
@@ -150,7 +168,6 @@ Structure
   cursor: pointer;
   text-align: center;
   display:inline-block;
-  border:1px solid #D4D4D4;
 }
 
 /* lista de chk e rdo */
