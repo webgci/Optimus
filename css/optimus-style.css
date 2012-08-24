@@ -71,6 +71,7 @@ Style
 	background: #fff none;
 	border-color:#c6c6c6;
 }
+
 form .optimus-txt:focus, .optimus input[type="text"]:focus, .optimus input[type="password"]:focus, .optimus input[type="file"]:focus, .optimus textarea:focus, .optimus select:focus  {
 	color:#333;
 	background: #fff none;
@@ -78,6 +79,11 @@ form .optimus-txt:focus, .optimus input[type="text"]:focus, .optimus input[type=
 	outline: 0;
 }
 
+.optimus .optimus-txt.optimus-disabled, .optimus input[type="text"].optimus-disabled, .optimus input[type="password"].optimus-disabled, .optimus input[type="file"].optimus-disabled, .optimus textarea.optimus-disabled, .optimus select.optimus-disabled {
+	color:#ccc;
+	background: #fff none;
+	border-color:#ddd;
+}
 
 /* form msg status  */
 .optimus-msg-info, .optimus-msg-warning, .optimus-msg-error, .optimus-msg-success {
