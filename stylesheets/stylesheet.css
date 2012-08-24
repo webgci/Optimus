@@ -9,7 +9,80 @@ body {
 }
 
 /* General & 'Reset' Stuff */
-
+/* table */
+table {border:1px solid #ccc; clear:both;width: 100%;background:#f2f2f2;border-collapse: collapse;font: normal 1em Arial,Sans-Serif;color:#333;margin-bottom:30px;}
+table td {padding:20px;}
+table thead td {background: #333; padding:10px;color:#fff;font: bolder 2em Arial,Sans-Serif;}
+table th {background: #333; padding: 10px 20px;color:#fff;font: bolder 2em Arial,Sans-Serif;text-align:left;}
+table tbody tr td {font-size:1.6em;}
+table tbody tr:nth-child(odd) {background: #f7f7f7;}
+table tbody tr:hover {
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background:#f9eaf1
+  /* shadow */
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,1), 0 2px 4px 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,1), 0 2px 4px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,1), 0 2px 4px 0 rgba(0,0,0,.3);
+  /* gradient */
+  background: -moz-linear-gradient(top, #dfdfdf 40%, #f5f5f5);
+  background: -webkit-linear-gradient(top, #dfdfdf 40%, #f5f5f5);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#f5f5f5dfdfdf');
+}
+.td-class {width:150px;font-size:1.2em;}
+.td-example {max-width:400px;font-size:1.2em;}
+.td-class span {
+	white-space: nowrap;
+	font-weight:bolder;
+	font-size: 1.4em;
+	color:#fff;
+	padding:10px;
+	display:block; 
+	float:left;
+	background: #EA0076;
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+  /* shadow */
+  -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), inset 0 3px 4px 0 rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), inset 0 3px 4px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), inset 0 3px 4px 0 rgba(0,0,0,.3);
+  /* gradient */
+  background-color: #B5E853;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+letter-spacing: -1px;
+-webkit-font-smoothing: antialiased;
+}
+.td-example pre {
+	background:#f5f5f5;
+  max-height:200px;
+  margin-bottom:1em;
+  overflow-y: auto;
+  padding:10px;
+  border:1px solid #bbb;
+	/*corner*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.td-example pre:hover, .td-example pre:focus {
+	background:#fff;
+}
+.td-example pre, .td-example code {display: block; height:auto;font: normal 1em/2em "Courier New", Courier, monospace,Sans-Serif;}
+.td-example code span {font-weight: bolder; color:#780234;}
+.topbar h1{
+  font-size: 30px;
+line-height: 1.5;
+font-weight: bold;
+font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+color: #B5E853;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+letter-spacing: -1px;
+-webkit-font-smoothing: antialiased;
+}
 .container {
   width: 90%;
   max-width: 600px;
@@ -164,8 +237,8 @@ pre {
 }
 
 table {
-  width: 100%;
-  margin: 0 0 20px 0;
+  width: 95%;
+  margin: 0 auto;
 }
 
 th {
