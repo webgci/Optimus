@@ -30,7 +30,7 @@
                 <label>Field Label <em class="optimus-req">*</em></label>
                <input type="text" class="optimus-small" value="Fill up the field" />
                <input type="text" class="optimus-medium" value="Fill up the field" />
-               <input type="submit" title="send" value="send" />
+               <input class="optimus-button" type="submit" title="send" value="send" />
         </div>
         <div class="grid-12-12">
                 <label>Field Label <em class="optimus-req">*</em></label>
@@ -55,9 +55,8 @@
                       <option>Select</option>
                       <option>Select</option>
                   </select>
-                 <input type="submit" title="send" value="send" />
-                 <input type="submit" title="send" value="send" />
-                 <input type="submit" title="send" value="send" />
+                 <input type="submit" title="send" value="send" class="optimus-button optimus-btn-orange" />
+                 <input type="submit" title="send" value="send" class="optimus-button" />
           </div>
           <div class="grid-12-12">
                   <label>Field Label <em class="optimus-req">*</em></label>
@@ -83,7 +82,7 @@
           </div>
         </fieldset>
         <div class="grid-12-12">
-               <input class="right" type="submit" title="send" value="send" />
+               <input class="optimus-button right" type="submit" title="send" value="send" />
         </div>
     </fieldset>
     
@@ -138,8 +137,6 @@
                <input type="text" value="Fill up the field" />
         </div>
         
-        
-        
         <div class="grid-2-12">
                 <label>2-12 <em class="optimus-req">*</em></label>
                <input type="text" value="Fill up the field" />
@@ -163,9 +160,7 @@
         <div class="grid-2-12">
                 <label>2-12 <em class="optimus-req">*</em></label>
                <input type="text" value="Fill up the field" />
-        </div>
-        
-        
+        </div>             
         
         <div class="grid-3-12">
                 <label>3-12 <em class="optimus-req">*</em></label>
@@ -183,8 +178,6 @@
                 <label>3-12 <em class="optimus-req">*</em></label>
                <input type="text" value="Fill up the field" />
         </div>
-        
-        
         
         <div class="grid-4-12">
                 <label>4-12 <em class="optimus-req">*</em></label>
@@ -326,9 +319,21 @@
     
     </fieldset>
     
-    
-    
-    
+    <fieldset>
+      <legend>Buttons</legend>
+        <div class="grid-12-12">
+          <input class="optimus-button optimus-btn-red" type="submit" title="Red" value="Red" />
+          
+          <input class="optimus-button optimus-btn-orange" type="submit" title="Orange" value="Orange" />
+          
+          <input class="optimus-button optimus-btn-green" type="submit" title="Green" value="Green" />
+
+          <input class="optimus-button optimus-btn-blue" type="submit" title="Blue" value="Blue" />
+          
+          <input class="optimus-button" type="submit" title="Default" value="Default" />
+        </div>
+    </fieldset>
+
     <fieldset>
     	<legend>Message Box</legend>
         <div class="optimus-msg-info"><h3>Information Message</h3></div>
@@ -341,9 +346,6 @@
         
     </fieldset>
     
-    
-    
-    
     <fieldset>
     	<legend>Example of form using Message Box (single)</legend>
         
@@ -354,9 +356,6 @@
         </div>
         
     </fieldset>
-    
-    
-    
     
     <fieldset>
     	<legend>Example of form using Message Box (summary)</legend>
@@ -378,10 +377,7 @@
         </div>
         
     </fieldset>
-    
-    
-    
-    
+      
     <fieldset>
         <legend>Login or Register</legend>
     	<div class="login">
@@ -403,25 +399,19 @@
             <div class="grid-6-12 clear">
             </div>      
             <div class="grid-6-12">
-                   <input class="right" type="submit" title="send" value="send" />
+                   <input class="optimus-button right" type="submit" title="send" value="send" />
             </div>
         </div>
     </fieldset>
-    
-    
-    
-    
+      
     <fieldset>
     	<legend>Add User</legend>
         <div class="grid-4-12">
                 <label>Name or Email <em class="optimus-req">*</em></label>
                <input type="text" class="optimus-medium" value="Fill up the field" />
-               <input type="submit" title="add" value="add" />
+               <input class="optimus-button optimus-btn-green" type="submit" title="add" value="add" />
         </div>
     </fieldset>    
-    
-    
-    
     
     <fieldset>
     	<legend>Search</legend>
@@ -429,12 +419,9 @@
                <input type="text" value="search" />
         </div>
         <div class="grid-2-12 alpha">
-               <input type="submit" title="search" value="search" />
+               <input class="optimus-button optimus-btn-green" type="submit" title="search" value="search" />
         </div>
     </fieldset>  
-    
-    
-    
     
     <fieldset>
     	<legend>Create an account</legend>
@@ -468,12 +455,9 @@
             </ul>
         </div>
         <div class="grid-6-12">
-               <input class="right" type="submit" title="Create" value="Create" />
+               <input class="optimus-button optimus-btn-green right" type="submit" title="Create" value="Create" />
         </div>
     </fieldset>  
-    
-    
-    
     
     <fieldset>
     	<legend>Contact us</legend>
@@ -502,7 +486,7 @@
                <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         <div class="grid-12-12">
-               <input class="right" type="submit" title="Send" value="Send" />
+               <input class="optimus-button optimus-btn-green right" type="submit" title="Send" value="Send" />
         </div>
     </fieldset>  
 	</form>
@@ -511,7 +495,7 @@
 </div>
 </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
   <script type="text/javascript" src="js/optimus.js"></script>
 
