@@ -1,0 +1,11 @@
+/* Little CSS Reset to preserv form structure */
+/* fix  ff bugs */
+/* line 4, ../sass/form-reset-structure.scss */
+.optimus:after, .optimus div:after, .optimus ol:after, .optimus ul:after, .optimus li:after, .optimus dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
