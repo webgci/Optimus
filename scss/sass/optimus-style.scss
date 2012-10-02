@@ -1,0 +1,60 @@
+/********************************************************************
+
+Project: Optimus
+Last Updated: 
+Version: 0.3
+Author: Paulo Henrique Pires -> about.me/paulohp
+			 
+********************************************************************
+Style
+********************************************************************/
+@import "mixins-styles";
+/*Variaveis*/
+$white:#fff;
+
+.optimus{
+	font: normal 10px/1.1em Arial,Sans-Serif;
+	legend, h3{
+		@include title-and-legend;
+	}
+	fieldset{
+		background: $white;
+		/*mixin rounded border*/
+		@include rounded-border(6);
+	}
+	label{
+		@include label(lbl);
+	}
+	.optimus-txt {
+	    @include input;
+	    /*shadow*/
+	    box-shadow: 1px 1px 2px #e7e7e7 inset;
+	    /*corner*/
+	    @include rounded-border(4)
+	}
+	input {
+	&[type="text"], &[type="password"], &[type="file"] {
+			@include input;
+			/*shadow*/
+			box-shadow: 1px 1px 2px #e7e7e7 inset;
+			/*corner*/
+			@include rounded-border(4)
+		}
+	}
+	textarea, select {
+		@include input;
+		/*shadow*/
+		box-shadow: 1px 1px 2px #e7e7e7 inset;
+		/*corner*/
+		@include rounded-border(4)
+	}
+}
+/*out of box style*/
+.optimus-req{
+	@include label(req);
+}
+/* hover effect */
+.grid-1-12:hover!, .grid-2-12:hover!, .grid-3-12:hover!, .grid-4-12:hover!, .grid-5-12:hover!, .grid-6-12:hover!, .grid-7-12:hover!, .grid-8-12:hover!, .grid-9-12:hover!, .grid-10-12:hover!, .grid-11-12:hover!, .grid-12-12:hover! {}
+.field-button:hover {
+  background: transparent;
+}
