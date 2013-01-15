@@ -14,19 +14,19 @@
   margin: 0 0 0.3em 0; }
 
 .optimus-msg-info {
-  background: #d1ecf7 url(../img/form-ic-info.png) no-repeat 12px 23px;
+  background: #d1ecf7 url("../../img/form-ic-info.png") no-repeat 12px 23px;
   border-color: #bcdfef; }
 
 .optimus-msg-warning {
-  background: #fff6bf url(../img/form-ic-warning.png) no-repeat 12px 23px;
+  background: #fff6bf url("../../img/form-ic-warning.png") no-repeat 12px 23px;
   border-color: #fceb77; }
 
 .optimus-msg-error {
-  background: #fad0d0 url(../img/form-ic-error.png) no-repeat 12px 23px;
+  background: #fad0d0 url("../../img/form-ic-error.png") no-repeat 12px 23px;
   border-color: #f6abab; }
 
 .optimus-msg-success {
-  background: #e5f8ce url(../img/form-ic-success.png) no-repeat 12px 23px;
+  background: #e5f8ce url("../../img/form-ic-success.png") no-repeat 12px 23px;
   border-color: #d0f1a6; }
   .optimus-msg-success strong, .optimus-msg-success a {
     color: #62b548; }
