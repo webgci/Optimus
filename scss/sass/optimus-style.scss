@@ -1,17 +1,21 @@
 /********************************************************************
 
 Project: Optimus
-Last Updated: 
+Last Updated:
 Version: 0.3
 Author: Paulo Henrique Pires -> about.me/paulohp
-			 
+
 ********************************************************************
 Style
 ********************************************************************/
 @import "mixins-styles";
+@import "buttons";
 /*Variaveis*/
 $white:#fff;
-
+.optimus-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
 .optimus{
 	font: normal 10px/1.1em Arial,Sans-Serif;
 	legend, h3{

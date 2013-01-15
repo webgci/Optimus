@@ -1,7 +1,7 @@
 /********************************************************************
 
 Project: Optimus
-Last Updated: 
+Last Updated:
 Version: 0.3
 Author: Paulo Henrique Pires -> about.me/paulohp
 
@@ -15,7 +15,7 @@ Structure
 @import "mixins-structures";
 
 /*Variaves*/
-$centralizar: 0 auto;
+$centered: 0 auto;
 $spacer: 0.5% 0.5% 0.8%;
 $full:100%;
 /*Form Structure*/
@@ -33,7 +33,7 @@ $full:100%;
 
 		fieldset{
 			width: $full - 3%;
- 			margin: $centralizar;
+ 			margin: $centered;
 		}
 	}
 	legend{
@@ -55,7 +55,7 @@ $full:100%;
 	}
 	input {
 		&[type="text"], &[type="password"], &[type="file"] {
-			@include input;   
+			@include input;
 		}
 	}
 	textarea, select {
@@ -111,7 +111,7 @@ $full:100%;
 
 	li{
 		list-style: none;
-		padding:0;	
+		padding:0;
 		margin-bottom: .4%;
 		font-size:1.4em;
 		line-height:1.1em;
