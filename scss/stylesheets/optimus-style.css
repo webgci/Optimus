@@ -1,0 +1,96 @@
+/********************************************************************
+
+Project: Optimus
+Last Updated: 
+Version: 0.3
+Author: Paulo Henrique Pires -> about.me/paulohp
+			 
+********************************************************************
+Style
+********************************************************************/
+/*Variaveis*/
+/* line 15, ../sass/optimus-style.scss */
+.optimus {
+  font: normal 10px/1.1em Arial, Sans-Serif;
+}
+/* line 17, ../sass/optimus-style.scss */
+.optimus legend, .optimus h3 {
+  font-size: 3em;
+  line-height: 1.2em;
+  letter-spacing: -0.035em;
+  color: #2b2b2b;
+  font-weight: normal;
+}
+/* line 20, ../sass/optimus-style.scss */
+.optimus fieldset {
+  background: white;
+  /*mixin rounded border*/
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 25, ../sass/optimus-style.scss */
+.optimus label {
+  color: #2b2b2b;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  vertical-align: middle;
+}
+/* line 28, ../sass/optimus-style.scss */
+.optimus .optimus-txt {
+  border-color: #c6c6c6 #dadada #eaeaea;
+  background: #fafafa;
+  color: #999;
+  font-size: 1.4em;
+  font-family: inherit;
+  /*shadow*/
+  box-shadow: 1px 1px 2px #e7e7e7 inset;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 36, ../sass/optimus-style.scss */
+.optimus input[type="text"], .optimus input[type="password"], .optimus input[type="file"] {
+  border-color: #c6c6c6 #dadada #eaeaea;
+  background: #fafafa;
+  color: #999;
+  font-size: 1.4em;
+  font-family: inherit;
+  /*shadow*/
+  box-shadow: 1px 1px 2px #e7e7e7 inset;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 44, ../sass/optimus-style.scss */
+.optimus textarea, .optimus select {
+  border-color: #c6c6c6 #dadada #eaeaea;
+  background: #fafafa;
+  color: #999;
+  font-size: 1.4em;
+  font-family: inherit;
+  /*shadow*/
+  box-shadow: 1px 1px 2px #e7e7e7 inset;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/*out of box style*/
+/* line 53, ../sass/optimus-style.scss */
+.optimus-req {
+  font-weight: bold;
+  font-style: normal;
+  color: #d10000;
+  font-size: 1.2em;
+  line-height: .85em;
+}
+
+/* hover effect */
+/* line 58, ../sass/optimus-style.scss */
+.field-button:hover {
+  background: transparent;
+}

@@ -1,0 +1,333 @@
+/********************************************************************
+
+Project: Optimus
+Last Updated: 
+Version: 0.3
+Author: Paulo Henrique Pires -> about.me/paulohp
+
+********************************************************************
+Structure
+********************************************************************/
+/*Compass Imports*/
+/* Little CSS Reset to preserv form structure */
+/* fix  ff bugs */
+/* line 4, ../sass/form-reset-structure.scss */
+.optimus:after, .optimus div:after, .optimus ol:after, .optimus ul:after, .optimus li:after, .optimus dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Field Grid */
+/* line 2, ../sass/grid.scss */
+.grid-1-12, .grid-2-12, .grid-3-12, .grid-4-12, .grid-5-12, .grid-6-12, .grid-7-12, .grid-8-12, .grid-9-12, .grid-10-12, .grid-11-12, .grid-12-12 {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0.8% 0.5% 1%;
+  height: 100%;
+  /*ie7*/
+  *margin-left: .8%;
+  *margin-right: .8%;
+  *padding: 0.8% 0.25% 1%;
+}
+
+/* 12-column Grid (thanks for Fluid 960 Grid System) */
+/* line 17, ../sass/grid.scss */
+.grid-1-12 {
+  width: 5.333%;
+}
+
+/* line 18, ../sass/grid.scss */
+.grid-2-12 {
+  width: 13.666%;
+}
+
+/* line 19, ../sass/grid.scss */
+.grid-3-12 {
+  width: 22%;
+}
+
+/* line 20, ../sass/grid.scss */
+.grid-4-12 {
+  width: 30.333%;
+}
+
+/* line 21, ../sass/grid.scss */
+.grid-5-12 {
+  width: 38.666%;
+}
+
+/* line 22, ../sass/grid.scss */
+.grid-6-12 {
+  width: 47%;
+}
+
+/* line 23, ../sass/grid.scss */
+.grid-7-12 {
+  width: 55.333%;
+}
+
+/* line 24, ../sass/grid.scss */
+.grid-8-12 {
+  width: 63.666%;
+}
+
+/* line 25, ../sass/grid.scss */
+.grid-9-12 {
+  width: 72%;
+}
+
+/* line 26, ../sass/grid.scss */
+.grid-10-12 {
+  width: 80.333%;
+}
+
+/* line 27, ../sass/grid.scss */
+.grid-11-12 {
+  width: 88.666%;
+}
+
+/* line 28, ../sass/grid.scss */
+.grid-12-12 {
+  width: 97%;
+}
+
+/* first item */
+/* line 32, ../sass/grid.scss */
+.optimus .alpha {
+  margin-left: 0;
+}
+
+/* last item */
+/* line 36, ../sass/grid.scss */
+.optimus .omega {
+  margin-right: 0;
+}
+
+/* clear */
+/* line 40, ../sass/grid.scss */
+.optimus .clear {
+  clear: both;
+}
+
+/* input without label */
+/* line 44, ../sass/grid.scss */
+.optimus-no-lbl {
+  position: relative;
+  padding-bottom: 0;
+}
+
+/* input without label */
+/* line 53, ../sass/grid.scss */
+.optimus-no-lbl input,
+.optimus-no-lbl label,
+.optimus-no-lbl span,
+.optimus-no-lbl ul,
+.optimus-no-lbl p {
+  position: absolute;
+  bottom: 0;
+}
+
+/* multiple containers inside field-grid */
+/* line 56, ../sass/grid.scss */
+.optimus .left {
+  clear: none;
+  float: left !important;
+  margin-right: 0.3em !important;
+}
+
+/* line 61, ../sass/grid.scss */
+.optimus .right {
+  clear: none;
+  float: right !important;
+  margin-left: 0.3em !important;
+}
+
+/*Variaves*/
+/*Form Structure*/
+/* line 22, ../sass/optimus-structure.scss */
+.optimus {
+  margin: 0;
+  padding: 0;
+  /*fieldset*/
+  /*Form Elements*/
+}
+/* line 27, ../sass/optimus-structure.scss */
+.optimus fieldset {
+  border: 1px solid #d4d4d4;
+  position: relative;
+  height: 100%;
+  padding: 1.2em 0;
+  margin: 0 0 4em;
+}
+/* line 34, ../sass/optimus-structure.scss */
+.optimus fieldset fieldset {
+  width: 97%;
+  margin: 0 auto;
+}
+/* line 39, ../sass/optimus-structure.scss */
+.optimus legend {
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0.5% 0.5% 0.8%;
+}
+/* line 44, ../sass/optimus-structure.scss */
+.optimus h3 {
+  margin: 2em 1% .8%;
+  padding: 0.5% 0.5% 0.8%;
+}
+/* line 50, ../sass/optimus-structure.scss */
+.optimus label {
+  display: block;
+  height: auto;
+  margin: 0.2em 0 0.5em;
+}
+/* line 53, ../sass/optimus-structure.scss */
+.optimus .optimus-txt {
+  vertical-align: middle;
+  line-height: 1.1em;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*ie7*/
+  *width: 99%;
+}
+/* line 57, ../sass/optimus-structure.scss */
+.optimus input[type="text"], .optimus input[type="password"], .optimus input[type="file"] {
+  vertical-align: middle;
+  line-height: 1.1em;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*ie7*/
+  *width: 99%;
+}
+/* line 61, ../sass/optimus-structure.scss */
+.optimus textarea, .optimus select {
+  vertical-align: middle;
+  line-height: 1.1em;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*ie7*/
+  *width: 99%;
+}
+/* line 64, ../sass/optimus-structure.scss */
+.optimus textarea {
+  height: 10em;
+}
+/* line 67, ../sass/optimus-structure.scss */
+.optimus select {
+  padding: 9px;
+  height: 2.7em;
+}
+/* line 72, ../sass/optimus-structure.scss */
+.optimus input[type="submit"], .optimus input[type="button"], .optimus input[type="reset"] {
+  padding: 8px 15px 9px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+/*out of box styles*/
+/* line 78, ../sass/optimus-structure.scss */
+.optimus-lbl {
+  display: block;
+  height: auto;
+  margin: 0.2em 0 0.5em;
+}
+
+/* line 81, ../sass/optimus-structure.scss */
+.optimus-list {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 87, ../sass/optimus-structure.scss */
+.optimus-list li {
+  margin: 0.5em 0.6em 0.8em;
+  float: left;
+  display: inline-block;
+  list-style: none;
+}
+/* line 93, ../sass/optimus-structure.scss */
+.optimus-list input {
+  margin-right: 0.2em;
+}
+/* line 96, ../sass/optimus-structure.scss */
+.optimus-list .optimus-lbl, .optimus-list label {
+  display: inline;
+  height: auto;
+  margin: 0.2em 0 0.5em;
+}
+
+/* line 100, ../sass/optimus-structure.scss */
+.optimus-req {
+  position: relative;
+  top: 3px;
+}
+
+/* line 104, ../sass/optimus-structure.scss */
+.optimus-msg {
+  padding: 20px 20px 15px 38px;
+  border: 1px solid #ccc;
+  display: block;
+  height: auto;
+  margin: 0 1.5% 0.8em;
+  clear: both;
+}
+/* line 112, ../sass/optimus-structure.scss */
+.optimus-msg li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: .4%;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  vertical-align: top;
+}
+
+/* line 121, ../sass/optimus-structure.scss */
+.optimus-button {
+  padding: 8px 15px 9px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 124, ../sass/optimus-structure.scss */
+.optimus-small {
+  width: 30% !important;
+  float: left;
+  margin-right: 10px;
+  display: inline;
+}
+
+/* line 127, ../sass/optimus-structure.scss */
+.optimus-medium {
+  width: 50% !important;
+  float: left;
+  margin-right: 10px;
+  display: inline;
+}

@@ -2,7 +2,7 @@
 
 Project: Optimus
 Last Updated: 
-Version: 0.2
+Version: 0.3
 Author: Paulo Henrique Pires -> about.me/paulohp
 			 
 ********************************************************************
@@ -12,9 +12,9 @@ Style
 .optimus fieldset {
 	background:#fff;
 	/*corner*/
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
 }
 .optimus-wrapper{
 	width: 80%;
@@ -56,12 +56,16 @@ Style
 	color:#999;
 	font-size:1.4em;
 	font-family:inherit;
+	/*shadow*/
+	box-shadow: 1px 1px 2px #e7e7e7 inset;
 	/*corner*/
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
 .optimus select {
+	/*shadow*/
+	box-shadow: 1px 1px 2px #e7e7e7 inset;
 	border-color:#c6c6c6 #dadada #eaeaea;
 	background: #fafafa;
 	color:#999;

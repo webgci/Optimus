@@ -1,0 +1,31 @@
+@mixin label($display){
+	display: #{$display};
+	height: auto;
+	margin: 0.2em 0 0.5em;
+}
+@mixin input{
+	vertical-align: middle;
+	line-height: 1.1em;
+	width: 100%;
+	padding:10px;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*ie7*/
+    *width: 99%;
+}
+@mixin btn{
+	padding:8px 15px 9px;
+	cursor: pointer;
+	text-align: center;
+	display:inline-block;
+}
+@mixin spread($width){
+	width: #{$width} !important;
+	float:left;
+	margin-right: 10px;
+	display:inline;
+}

@@ -1,0 +1,146 @@
+/********************************************************************
+
+Project: Optimus
+Last Updated:
+Version: 0.3
+Author: Paulo Henrique Pires -> about.me/paulohp
+
+********************************************************************
+Structure
+********************************************************************/
+
+/*Compass Imports*/
+@import "form-reset-structure";
+@import "grid";
+@import "mixins-structures";
+
+/*Variaves*/
+$centered: 0 auto;
+$spacer: 0.5% 0.5% 0.8%;
+$full:100%;
+/*Form Structure*/
+.optimus{
+	margin:0;
+	padding: 0;
+
+	/*fieldset*/
+	fieldset{
+		border: 1px solid #d4d4d4;
+		position: relative;
+		height:$full;
+		padding: 1.2em 0;
+		margin: 0 0 4em;
+
+		fieldset{
+			width: $full - 3%;
+ 			margin: $centered;
+		}
+	}
+	legend{
+		margin-left:1%;
+		margin-right:1%;
+		padding: $spacer;
+	}
+	h3{
+		margin: 2em 1% .8%;
+		padding: $spacer;
+	}
+
+	/*Form Elements*/
+	label{
+		@include label(block);
+	}
+	.optimus-txt {
+    	@include input;
+	}
+	input {
+		&[type="text"], &[type="password"], &[type="file"] {
+			@include input;
+		}
+	}
+	textarea, select {
+	@include input;
+	}
+	textarea{
+		height: 10em;
+	}
+	select{
+		padding: 9px;
+		height: 2.7em;
+	}
+	input{
+		&[type="submit"], &[type="button"], &[type="reset"]{
+			@include btn;
+		}
+	}
+}
+/*out of box styles*/
+.optimus-lbl{
+	@include label(block);
+}
+.optimus-list {
+	height: 100%;
+	list-style: none;
+	padding:0;
+	margin:0;
+
+	li{
+		margin: 0.5em 0.6em 0.8em;
+		float:left;
+		display: inline-block;
+		list-style:none;
+	}
+	input{
+		margin-right:0.2em;
+	}
+	.optimus-lbl, label {
+		@include label(inline);
+	}
+}
+.optimus-req {
+	position: relative;
+	top:3px;
+}
+.optimus-msg{
+	padding:20px 20px 15px 38px;
+	border: 1px solid #ccc;
+	display: block;
+	height: auto;
+	margin: 0 1.5% 0.8em;
+	clear:both;
+
+	li{
+		list-style: none;
+		padding:0;
+		margin-bottom: .4%;
+		font-size:1.4em;
+		line-height:1.1em;
+		vertical-align: top;
+	}
+}
+.optimus-msg-info, .optimus-msg-warning, .optimus-msg-error, .optimus-msg-success {
+  padding: 20px 20px 15px 38px;
+  border: 1px solid #ccc;
+  display: block;
+  height: auto;
+  margin: 0 1.5% 0.8em;
+  clear: both;
+}
+
+.optimus-msg-info li, .optimus-msg-warning li, .optimus-msg-error li, .optimus-msg-success li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: .4%;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  vertical-align: top;
+}
+.optimus-button{
+	@include btn;
+}
+.optimus-small{
+	@include spread(30%);
+}
+.optimus-medium{
+	@include spread(50%);
+}
