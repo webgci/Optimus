@@ -226,6 +226,22 @@ Structure
     line-height: 1.1em;
     vertical-align: top; }
 
+.optimus-msg-info, .optimus-msg-warning, .optimus-msg-error, .optimus-msg-success {
+  padding: 20px 20px 15px 38px;
+  border: 1px solid #cccccc;
+  display: block;
+  height: auto;
+  margin: 0 1.5% 0.8em;
+  clear: both; }
+
+.optimus-msg-info li, .optimus-msg-warning li, .optimus-msg-error li, .optimus-msg-success li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: .4%;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  vertical-align: top; }
+
 .optimus-button {
   padding: 8px 15px 9px;
   cursor: pointer;

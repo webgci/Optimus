@@ -1,0 +1,69 @@
+/* form msg status  */
+
+.optimus-msg-info, .optimus-msg-warning, .optimus-msg-error, .optimus-msg-success {
+  color: #2b2b2b;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.optimus-msg-info h3, .optimus-msg-warning h3, .optimus-msg-error h3, .optimus-msg-success h3 {
+  font-size: 2em!important;
+  line-height: 1.1em!important;
+  letter-spacing: -0.02em;
+  padding: 0;
+  margin: 0 0 .3em 0;
+}
+
+.optimus-msg-info {
+  background: #d1ecf7 url(../img/form-ic-info.png) no-repeat 12px 23px;
+  border-color: #bcdfef;
+}
+
+.optimus-msg-warning {
+  background: #fff6bf url(../img/form-ic-warning.png) no-repeat 12px 23px;
+  border-color: #fceb77;
+}
+
+.optimus-msg-error {
+  background: #fad0d0 url(../img/form-ic-error.png) no-repeat 12px 23px;
+  border-color: #f6abab;
+}
+
+.optimus-msg-success {
+  background: #e5f8ce url(../img/form-ic-success.png) no-repeat 12px 23px;
+  border-color: #d0f1a6;
+  strong, a {
+    color: #62b548;
+  }
+}
+
+.optimus-msg-info {
+  strong, a {
+    color: #11689e;
+  }
+}
+
+.optimus-msg-warning {
+  strong, a {
+    color: #957210;
+  }
+}
+
+.optimus-msg-error {
+  strong, a {
+    color: #b01717;
+  }
+}
+
+/* form validation */
+
+.optimus-error {
+  border-color: #FAD0D0 !important;
+  color: #b01717 !important;
+  /* shadow */
+  -moz-box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+  -webkit-box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+  box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+}
